@@ -22,10 +22,11 @@
 						  <img src="images/pic01.jpg" alt="Profile" style="width:140px;height:140px;border-radius:50%;margin-bottom:20px;border:4px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
 						  <h1 style="margin-bottom:0.2em;">Hoang Ngoc Hong</h1>
 						  <h3 style="color:#6c63ff;margin-bottom:0.5em;">Data Analyst</h3>
-						  <p style="max-width:600px;margin:0 auto 1.5em auto;">Data analyst with hands-on experience across consumer-credit/credit-card services, telesales analytics, and large-scale inspection-data analysis. Applies AI agents (Gemini, Claude) for faster analysis, then verifies with SQL and Python.</p>
+						  <p style="max-width:640px;margin:0 auto 1.5em auto;">Data analyst with hands-on experience in consumer credit / credit-card services &mdash; telesales and call-performance analytics, customer segmentation, and KPI design &mdash; and in large-scale inspection-data analysis for international clients, working daily in English with stakeholders across APAC, the Middle East, Europe, and the Americas. I turn ambiguous business questions into clear, decision-ready reports, and use AI agents (Gemini, Claude) as leverage &mdash; always verifying results with SQL and Python.</p>
 						  <ul class="icons" style="justify-content:center;">
 							  <li><a href="mailto:hoangngochong03@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 							  <li><a href="https://www.linkedin.com/in/honghoang03/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							  <li><a href="https://github.com/hoangngochong03" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 							  <li><a href="tel:+84366928921" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
 						  </ul>
 						  <ul class="actions" style="justify-content:center;">
@@ -62,16 +63,15 @@
 								   <div class="row">
 									   <div class="col-6 col-12-small">
 										   <ul>
-											   <li><b>AI-Augmented Analytics:</b> Steering LLMs/agents (Gemini, Claude); prompt design &amp; iteration; validating agent output</li>
-											   <li><b>Analysis &amp; Verification:</b> Strong SQL, Python, Excel; data cleaning, data validation</li>
-											   <li><b>Domain:</b> Consumer credit / credit-card services, telesales &amp; call-performance analytics, customer segmentation, KPI design</li>
+											   <li><b>Analysis &amp; Verification:</b> Strong SQL; Python; Excel; data cleaning and data validation</li>
+											   <li><b>BI &amp; Visualization:</b> Power BI, Apache Superset, Looker Studio</li>
+											   <li><b>Domain:</b> Consumer credit / credit-card services; telesales &amp; call-performance analytics; customer segmentation; KPI design</li>
 										   </ul>
 									   </div>
 									   <div class="col-6 col-12-small">
 										   <ul>
-											   <li><b>BI &amp; Visualization:</b> Power BI, Apache Superset, Looker Studio</li>
-											   <li><b>Databases &amp; ML:</b> PostgreSQL, MySQL; Scikit-learn, Hugging Face</li>
-											   <li><b>Languages:</b> Vietnamese (Native), English (working proficiency)</li>
+											   <li><b>Databases &amp; Big Data / ML:</b> PostgreSQL, MySQL; Spark (MLlib, Streaming), Kafka; Scikit-learn, Hugging Face</li>
+											   <li><b>Languages:</b> Vietnamese (native); English &mdash; daily working language at ROSEN with international project teams</li>
 										   </ul>
 									   </div>
 								   </div>
@@ -105,6 +105,43 @@
 							   <section id="projects" class="post" style="margin-bottom:2em;">
 								   <header class="major"><h2><i class="icon solid fa-project-diagram"></i> Projects</h2></header>
 								   <div class="row">
+
+										<div class="col-12 col-12-small">
+									   <div class="card" style="background:#fff;padding:1em 1em 0.5em 1em;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);margin-bottom:1.5em;">
+										   <h3>Amazon Laptop Product &amp; Review Analysis <span style="font-size:0.7em;color:#6c63ff;">(end-to-end pipeline)</span></h3>
+										   <p style="margin-bottom:0.8em;"><b>Background:</b> Laptop listings on Amazon contain thousands of scattered data points &mdash; specs, prices, ratings, and free-text reviews &mdash; that are hard to compare at a glance. Raw review text in particular hides the &ldquo;why&rdquo; behind ratings.</p>
+										   <p style="margin-bottom:0.8em;"><b>Objective:</b> Build an end-to-end pipeline that collects, cleans, enriches, and visualizes Amazon laptop data, turning unstructured product and review pages into a decision-ready Power BI dashboard.</p>
+										   <b>Pipeline:</b>
+										   <ul>
+											   <li><b>Collect</b> &mdash; scraped product details and customer reviews with Selenium.</li>
+											   <li><b>Process</b> &mdash; cleaned and transformed the raw data with Python (Pandas, NumPy).</li>
+											   <li><b>Enrich</b> &mdash; classified review sentiment with a pre-trained Hugging Face model.</li>
+											   <li><b>Store</b> &mdash; loaded results into PostgreSQL with tables and triggers.</li>
+											   <li><b>Visualize</b> &mdash; built Power BI dashboards for price, rating, and sentiment insights.</li>
+										   </ul>
+										   <ul class="actions" style="margin-bottom:0.5em;">
+											   <li><a href="https://github.com/hoangngochong03/Amazon-Laptop-Analysis" target="_blank" class="button small icon brands fa-github"> View on GitHub</a></li>
+										   </ul>
+									   </div>
+									   </div>
+
+										<div class="col-12 col-12-small">
+									   <div class="card" style="background:#fff;padding:1em 1em 0.5em 1em;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);margin-bottom:1.5em;">
+										   <h3>Sentiment Classification of YouTube Livestream Comments <span style="font-size:0.7em;color:#6c63ff;">(Spark, Kafka)</span></h3>
+										   <p style="margin-bottom:0.8em;"><b>Background:</b> Livestream comments arrive as a continuous, high-velocity stream &mdash; far too fast for manual review, yet full of real-time audience-sentiment signals.</p>
+										   <p style="margin-bottom:0.8em;"><b>Objective:</b> Build a streaming pipeline that ingests live YouTube comments and classifies Vietnamese sentiment in near real time.</p>
+										   <b>Pipeline:</b>
+										   <ul>
+											   <li><b>Ingest</b> &mdash; streamed live comments through a Kafka Producer.</li>
+											   <li><b>Model</b> &mdash; trained a Vietnamese sentiment classifier with Spark MLlib on the ViHSD dataset.</li>
+											   <li><b>Process</b> &mdash; scored incoming batches with Spark Streaming; preprocessed and normalized text.</li>
+											   <li><b>Store &amp; Visualize</b> &mdash; persisted results in PostgreSQL and visualized them in Power BI.</li>
+										   </ul>
+										   <ul class="actions" style="margin-bottom:0.5em;">
+											   <li><a href="https://github.com/hoangngochong03/Youtube-Live-Comment-Sentiment-Using-Spark" target="_blank" class="button small icon brands fa-github"> View on GitHub</a></li>
+										   </ul>
+									   </div>
+									   </div>
 
 										<div class="col-12 col-12-small">
 									   <div class="card" style="background:#fff;padding:1em 1em 0.5em 1em;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);margin-bottom:1.5em;">
@@ -165,30 +202,6 @@
 									   </div>
 									
 
-									   <div class="col-6 col-12-small">
-										   <div class="card" style="background:#fff;padding:1em 1em 0.5em 1em;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);margin-bottom:1em;">
-											   <h3>Amazon Laptop Analysis</h3>
-											   <ul>
-												   <li>Scraped laptop product details and reviews from Amazon using Selenium.</li>
-												   <li>Cleaned and structured data, classified reviews with Hugging Face models.</li>
-												   <li>Created database tables and triggers in PostgreSQL, loaded processed data.</li>
-												   <li>Visualized data and built dashboards in Power BI.</li>
-											   </ul>
-											   <a href="https://github.com/hoangngochong03/Amazon-Laptop-Analysis" target="_blank" class="button small icon brands fa-github" style="margin-bottom:0.5em;"> View on GitHub</a>
-										   </div>
-									   </div>
-									   <div class="col-6 col-12-small">
-										   <div class="card" style="background:#fff;padding:1em 1em 0.5em 1em;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.07);margin-bottom:1em;">
-											   <h3>Sentiment Classification of YouTube Livestream Comments</h3>
-											   <ul>
-												   <li>Fetched live comments from YouTube Livestream using Kafka Producer.</li>
-												   <li>Trained Vietnamese sentiment classification model with Spark MLlib and vihsd dataset.</li>
-												   <li>Processed data in batches with Spark Streaming, preprocessed and normalized text.</li>
-												   <li>Classified sentiment, stored results in PostgreSQL, visualized with Power BI.</li>
-											   </ul>
-											   <a href="https://github.com/hoangngochong03/Youtube-Live-Comment-Sentiment-Using-Spark" target="_blank" class="button small icon brands fa-github" style="margin-bottom:0.5em;"> View on GitHub</a>
-										   </div>
-									   </div>
 								   </div>
 							   </section>
 
@@ -211,7 +224,6 @@
 									   <li>Databases and SQL for Data Science - IBM</li>
 									   <li>Capstone: Retrieving, Processing, and Visualizing Data with Python - University of Michigan</li>
 									   <li>Problem Solving Using Computational Thinking - University of Michigan</li>
-									   <li>English: TOEIC Listening and Reading 700, VSTEP B2</li>
 								   </ul>
 							   </section>
 
@@ -219,17 +231,21 @@
 						<section id="contact" class="post" style="margin-bottom:1em;">
 								   <header class="major"><h2><i class="icon solid fa-envelope"></i> Contact</h2></header>
 								   <div class="row">
-									   <div class="col-4 col-12-small">
+									   <div class="col-3 col-6-small col-12-xsmall">
 										   <h3>Email</h3>
 										   <p><a href="mailto:hoangngochong03@gmail.com">hoangngochong03@gmail.com</a></p>
 									   </div>
-									   <div class="col-4 col-12-small">
+									   <div class="col-3 col-6-small col-12-xsmall">
 										   <h3>Mobile</h3>
 										   <p><a href="tel:+84366928921">(+84) 366 928 921</a></p>
 									   </div>
-									   <div class="col-4 col-12-small">
+									   <div class="col-3 col-6-small col-12-xsmall">
 										   <h3>LinkedIn</h3>
 										   <p><a href="https://www.linkedin.com/in/honghoang03/">linkedin.com/in/honghoang03</a></p>
+									   </div>
+									   <div class="col-3 col-6-small col-12-xsmall">
+										   <h3>GitHub</h3>
+										   <p><a href="https://github.com/hoangngochong03">github.com/hoangngochong03</a></p>
 									   </div>
 								   </div>
 							   </section>
